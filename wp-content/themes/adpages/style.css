@@ -24,6 +24,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 body {
 	line-height: 1;
+	font-size:17px;
 }
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
@@ -47,9 +48,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-a img {
-	border: none;
-}
+a {outline: none;}
+a img {border:none}
+
+
+
+
+*, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
 
 
 
@@ -60,7 +65,7 @@ input,
 textarea,
 .page-title span,
 .pingback a.url {
-	font-family: Georgia, "Bitstream Charter", serif;
+	font-family: "futura-pt",sans-serif;
 }
 h3#comments-title,
 h3#reply-title,
@@ -270,7 +275,7 @@ a:hover {
 #content h5,
 #content h6 {
 	color: #000;
-	line-height: 1.5em;
+	line-height: 1.1;
 	margin: 0 0 20px 0;
 }
 #content table {
@@ -831,6 +836,115 @@ h3#reply-title {
 }
 
 
+
+/* Custom */
+
+.header {
+	text-align: center;
+	padding:14px 0;
+	border-bottom:#000 1px solid;
+}
+
+.logo {
+	display: inline-block;
+	margin-bottom:4px;
+}
+
+.location_name, .phone_number {
+	display: block;
+	margin-bottom:4px;
+	font-size:23px;
+}
+
+
+.main {
+	padding:20px 20px 0;
+	margin-bottom:75px;
+}
+
+#content img {
+	max-width:100%;
+	height:auto;
+}
+
+#content a {
+	color:#7e9aa6;
+	text-decoration: none;
+}
+
+#content a:hover {
+	text-decoration: underline;
+}
+
+.sticky_footer {
+	background:#7e9aa6;
+	width:100%;
+	position:fixed;
+	bottom:0;
+	z-index:5;
+	text-align: center;
+	padding:8px 0;
+}
+
+.schedule {
+	border:1px solid #fff;
+	color:#fff;
+	padding:5px 20px;
+	margin:2px 0;
+	display: inline-block;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	cursor: pointer;
+	background:#fff;
+	color:#000;
+	transition:all .3s ease;
+}
+
+.schedule:hover {
+	border:1px solid #fff;
+	background:transparent;
+	transition:all .3s ease;
+}
+
+
+@media screen and (min-width: 1055px) {
+	
+	
+	.inner_header {
+		overflow: hidden;
+		max-width:1020px;
+		margin: 0 auto;
+	}
+	
+	.main {
+		max-width:1020px;
+		margin:0 auto 75px;
+		padding-left:0;
+		padding-right:0;
+		overflow: hidden;
+	}
+	
+	#content {
+		float:left;
+		width:565px;
+	}
+	
+	.sticky_footer {
+		display: none;
+	}
+	
+	.logo_wrapper {
+		float:left;
+	}
+	
+	.phone_number {
+		float:right;
+		margin-top:65px;
+	}
+	
+	
+}
 
 
 

@@ -1,5 +1,3 @@
-
-
 <?php
 	/*
 	 * Always have wp_footer() just before the closing </body>
