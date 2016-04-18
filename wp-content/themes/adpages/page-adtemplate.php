@@ -218,6 +218,15 @@ nunc. Morbi imperdiet augue
 		
 		</div><!-- content -->
 		
+		<div class="sidebar">
+			
+			<h1>Schedule Your<br/>
+In-Home Consultation</h1>
+
+<?php gravity_form(1, false, false, false, '', true, 12); ?>
+			
+		</div><!--sidebar -->
+		
 	</div><!-- main -->
 
 
@@ -228,6 +237,8 @@ nunc. Morbi imperdiet augue
 <div class="sticky_footer">
 	
 	<span class="schedule">Schedule Your In-Home Consultation</span>
+	
+	
 	
 </div><!-- sticky_footer -->
 
