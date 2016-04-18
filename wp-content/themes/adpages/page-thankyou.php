@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Ad Template
+ * Template Name: Thank You Template
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -64,7 +64,7 @@
 	
 	<div class="main">
 		
-		<div id="content">
+		<div id="content" style="width:100%;">
 		
 			<h1><?php the_title();?></h1>
 			
@@ -72,18 +72,7 @@
 
 		</div><!-- content -->
 		
-		<div id="form" class="sidebar">
-			
-			
 				
-				<h1>Schedule Your<br/>
-In-Home Consultation</h1>
-				
-				<?php gravity_form(1, false, false, false, '', true, 12); ?>
-			
-			
-		</div><!--sidebar -->
-		
 	</div><!-- main -->
 
 
