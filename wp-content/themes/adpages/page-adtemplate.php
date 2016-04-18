@@ -14,17 +14,7 @@
 
  ?>
  
- <?php
-/**
- * Header template for our theme
- *
- * Displays all of the <head> section and everything up till <div id="main">.
- *
- * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
- */
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -64,9 +54,9 @@
 		<div class="inner_header">
 			<div class="logo_wrapper">
 				<img class="logo" src="<?php bloginfo('template_directory');?>/images/logo.png"/>
-				<span class="location_name">Location Name</span><!-- location_name -->
+				<span class="location_name"><?php the_field('location_name', 'option'); ?></span><!-- location_name -->
 			</div><!-- logo_wrapper -->
-				<span class="phone_number">(XXX) XXX-XXXX</span><!-- phone_number -->
+				<span class="phone_number"><?php the_field('phone_number', 'option'); ?></span><!-- phone_number -->
 			
 			</div><!-- inner_header -->
 	</div><!-- header -->
@@ -254,6 +244,31 @@ In-Home Consultation</h1>
 
 
 <?php wp_footer(); ?>
+
+<script type="text/javascript" src="<?php bloginfo('template_directory');?>/stickysidebar.js"></script>
+
+<script type="text/javascript">
+	
+	jQuery(document).ready(function(){
+	jQuery('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    jQuery('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+	
+	jQuery(".sidebar").stick_in_parent();
+	
+	
+});
+	
+</script>
 
 </body>
 </html>

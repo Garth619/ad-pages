@@ -995,6 +995,7 @@ h3#reply-title {
 	#content {
 		float:left;
 		width:65%;
+		margin-right:4%;
 	}
 	
 	.sticky_footer {
@@ -1018,7 +1019,7 @@ h3#reply-title {
 	.sidebar {
 		float:left;
 		width:31%;
-		margin:6px 0 0 4%;
+		margin:6px 0 0 0%;
 	}
 	
 	.desktop_footer {
