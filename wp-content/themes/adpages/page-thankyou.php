@@ -46,6 +46,7 @@
 <?php wp_head(); ?>
 <script src="https://use.typekit.net/fae3bee.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
+<?php the_field('tracking_code');?>
 </head>
 
 <body <?php body_class(); ?>>
