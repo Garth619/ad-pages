@@ -213,17 +213,17 @@ nunc. Morbi imperdiet augue
 <small><a href="#wrapper">[top]</a></small>
 
 
-			
-			
+</div><!-- content -->
 		
-		</div><!-- content -->
-		
-		<div class="sidebar">
+		<div id="form" class="sidebar">
 			
-			<h1>Schedule Your<br/>
+			
+				
+				<h1>Schedule Your<br/>
 In-Home Consultation</h1>
-
-<?php gravity_form(1, false, false, false, '', true, 12); ?>
+				
+				<?php gravity_form(1, false, false, false, '', true, 12); ?>
+			
 			
 		</div><!--sidebar -->
 		
@@ -236,11 +236,19 @@ In-Home Consultation</h1>
 
 <div class="sticky_footer">
 	
-	<span class="schedule">Schedule Your In-Home Consultation</span>
+	<a href="#form" class="schedule">Schedule Your In-Home Consultation</a>
 	
 	
 	
 </div><!-- sticky_footer -->
+
+<div class="desktop_footer">
+	
+	<div class="inner_footer">
+		<span>&copy; 2016 Budget Blinds, Inc. | All Rights Reserved</span>
+	</div><!-- inner_footer -->
+
+</div><!-- desktop_footer -->
 
 		
 

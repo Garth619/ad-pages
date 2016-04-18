@@ -886,6 +886,11 @@ h3#reply-title {
 	padding:8px 0;
 }
 
+.sticky_footer a {
+	text-decoration: none;
+	color:#000;
+}
+
 .schedule {
 	border:1px solid #fff;
 	color:#fff;
@@ -908,8 +913,66 @@ h3#reply-title {
 }
 
 .sidebar {
-	display:none;
+	background:#7e9aa6;
+	padding:20px 30px;
+
 }
+
+#content .sidebar h1, .sidebar h1 {
+		color:#fff;
+		text-align: center;
+		font-size:27px;
+	}
+
+	
+	.sidebar ul {
+		list-style: none;
+		margin:15px 0 0;
+	}
+	
+	.sidebar li {
+		width:100%;
+		margin-bottom:15px;
+	}
+	
+	.sidebar label {
+		display:none;
+	}
+	
+	.sidebar input {
+		width:100%;
+		border:none;
+		padding: 2px 0 2px 5px;
+		font-size:17px;
+		
+	}
+	
+	#content input.gform_button, input.gform_button {
+		background: #000;
+		padding: 2px 0 2px 0px;
+		color:#fff;
+		cursor:pointer;
+		transition:all .3s ease; 
+	}
+	
+	input.gform_button:hover {
+		transition:all .3s ease; 
+		background:#fff;
+		color:#000;
+	}
+	
+	.validation_error {
+		display:none;
+	}
+	
+	.validation_message {
+		margin:5px 0 0 3px;
+	}
+	
+	.desktop_footer {
+		display: none;
+	}
+	
 
 
 @media screen and (min-width: 1055px) {
@@ -947,67 +1010,35 @@ h3#reply-title {
 		margin-top:65px;
 	}
 	
+	.mobile_form {
+		display: none;
+		
+	}
+	
 	.sidebar {
 		float:left;
 		width:31%;
-		background:#7e9aa6;
-		
-		display: block;
 		margin:6px 0 0 4%;
-		padding:20px 30px;
-		
 	}
 	
-	.sidebar h1 {
+	.desktop_footer {
+		display: block;
+		background:#000;
+		border-top:4px solid #cecece;
 		color:#fff;
+		padding:8px 0;
 		text-align: center;
-		font-size:27px;
+		font-size:14px;
 	}
 	
-	.sidebar ul {
-		list-style: none;
-		margin:15px 0 0;
-	}
-	
-	.sidebar li {
-		width:100%;
-		margin-bottom:10px;
-	}
-	
-	.sidebar label {
-		display:none;
-	}
-	
-	.sidebar input {
-		width:100%;
-		border:none;
-		padding: 2px 0 2px 5px;
-		font-size:17px;
+	.inner_footer {
+		max-width:1020px;
+		margin:0 auto;
 		
 	}
 	
-	input.gform_button {
-		background: #000;
-		padding: 2px 0 2px 0px;
-		color:#fff;
-		cursor:pointer;
-	
-		transition:all .3s ease; 
-	}
-	
-	input.gform_button:hover {
-		transition:all .3s ease; 
-		background:#fff;
-		color:#000;
-	}
-	
-	.validation_error {
-		display:none;
-	}
-	
-	.validation_message {
-		margin:5px 0 0 3px;
-	}
+
+
 	
 	
 }
