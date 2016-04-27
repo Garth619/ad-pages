@@ -47,6 +47,7 @@
 <script src="https://use.typekit.net/fae3bee.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 <?php the_field('tracking_code');?>
+<?php the_field('google_analytics');?>
 </head>
 
 <body <?php body_class(); ?>>
