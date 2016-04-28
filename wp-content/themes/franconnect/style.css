@@ -850,10 +850,12 @@ h3#reply-title {
 	margin-bottom:4px;
 }
 
-.location_name, .phone_number {
+.location_name, a.phone_number {
 	display: block;
 	margin-bottom:4px;
 	font-size:23px;
+	color:#000;
+	text-decoration: none;
 }
 
 
