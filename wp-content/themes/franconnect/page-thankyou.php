@@ -59,7 +59,7 @@
 				
 				<span class="location_name"><?php the_field('location_name', 'option'); ?></span><!-- location_name -->
 			</div><!-- logo_wrapper -->
-				<span class="phone_number"><?php the_field('phone_number', 'option'); ?></span><!-- phone_number -->
+				<a class="phone_number" href="tel:<?php the_field('phone_number', 'option'); ?>"><?php the_field('phone_number', 'option'); ?></a><!-- phone_number -->
 			
 			</div><!-- inner_header -->
 	</div><!-- header -->
