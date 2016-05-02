@@ -68,7 +68,7 @@
 		
 		<div id="content" style="width:100%;">
 		
-			<h1><?php the_title();?></h1>
+			<h1><?php the_field('title');?></h1>
 			
 			<?php get_template_part( 'loop', 'page' ); ?>
 

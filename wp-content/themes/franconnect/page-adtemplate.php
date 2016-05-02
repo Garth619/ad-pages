@@ -68,7 +68,7 @@
 		
 		<div id="content">
 		
-			<h1><?php the_title();?></h1>
+			<h1><?php the_field('title');?></h1>
 			
 			<?php get_template_part( 'loop', 'page' ); ?>
 
@@ -80,8 +80,15 @@
 				
 				<h1>Schedule Your<br/>
 In-Home Consultation</h1>
+
 				
-				<?php gravity_form(1, false, false, false, '', true, 12); ?>
+				<?php $form_object = get_field('form');
+						gravity_form_enqueue_scripts($form_object['id'], true);
+						gravity_form($form_object['id'], false, false, false, '', true, 12); 
+					?>
+				
+				
+
 			
 			
 		</div><!--sidebar -->
@@ -90,7 +97,7 @@ In-Home Consultation</h1>
 
 
 	
-<?php // get_template_part( 'loop', 'page' ); ?> 
+
 
 
 <div class="sticky_footer">
